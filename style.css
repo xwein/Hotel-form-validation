@@ -1,0 +1,208 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: initial;
+  }
+}
+
+body{
+  font-family: 'Vollkorn', serif;
+  color: aliceblue;
+  display: flex;
+
+}
+
+.street{
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    width: 36%;
+    height: 100vh;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 23.7%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 180px;
+  }
+
+  .logo-img{
+    width: 150px; /* Set the logo size */
+    height: 150px;
+  }
+  
+  .hotel-name{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .content{
+    width: 64%;
+    background-color: #FAFAFF;
+    height: 100vh;
+  }
+
+  .header{
+    background-color: #1E2749;
+    font-size: 1.5rem;
+    height: 33%;
+    padding: 5rem;
+  }
+
+  .forms{
+    color: black;
+    background-color: #FAFAFF;
+    height: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5rem;
+    gap: 4rem;
+  }
+
+  form{
+    height: 100%;
+  }
+
+  .left-column{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .right-column{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer{
+    background-color: #1E2749;
+    height: 30.5%;
+    padding: 5rem;
+  }
+
+  .log{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+   
+  .action{
+    background-color: #FAFAFF;
+    height: 7%;
+  }
+  .action-call{
+    padding-left: 5rem;
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  .question{
+    padding-top: 1rem;
+  }
+
+  span{
+    font-style: italic;
+  }
+
+  button{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #E4D9FF;
+  }
+
+  button:hover{
+    background-color: #3A2E39;
+  }
+
+  a{
+    color: #A2FAA3;
+  }
+
+  a:hover{
+    color: #4F759B;
+  }
+
+  #password-error{
+    color: red;
+    padding-left: 5rem;
+    font-size: 0.8rem;
+  }
